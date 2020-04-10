@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* The following tag selector body use the font-family and background-color properties for body of a page*/
+body{
+font-family: Calibri, Helvetica, sans-serif;
+background-color: pink;
+}
+/* Following container class used padding for generate space around it, and also use a background-color for specify the color lightblue as a background */  
+.container {
+padding: 50px;
+background-color: lightblue;
+}
+/* The following tag selector input use the different properties for the text filed. */
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+ border: none;
+ background: #f1f1f1;
+}
+input[type=text]:focus {
+background-color: orange;
+outline: none;
+}
+ div {
+            padding: 10px 0;
+            
+        }
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* The following tag selector button use the different properties for the Button. */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+ border: none;
+  cursor: pointer;
+ margin: 8px 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+opacity: 1;
+}
+
+
+
+</style>
+</head>
+<body>
+<form>
+<div class="container">
+<center>  <h1> Registration Form </h1> </center>
+  
+<hr>
+<label> Firstname 
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required /> 
+</label> 
+<label> Middlename: 
+<input type="text" name="middlename" placeholder="Middlename" size="15" required /> 
+</label> 
+<label> Lastname:  
+<input type="text" name="lastname" placeholder="Lastname" size="15"required /> 
+</label> 
+<div>
+<label> 
+Gender :
+<br>
+<input type="radio" value="Male" name="gender" checked > Male 
+<input type="radio" value="Female" name="gender"> Female 
+<input type="radio" value="Other" name="gender"> Other
+</label>
+
+</div>
+<label> 
+Phone :
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
+<input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+</label>
+
+<label>
+<b>
+Email :
+</b>
+<input type="text" placeholder="Enter Email" name="email" required>
+</label>
+<button type="submit" value="submit">Submit</button>
+<button type="reset" value="submit">Reset</button>
+</form>
+</body>
+</html>
+
+ 
